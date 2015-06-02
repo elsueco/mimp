@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+
+<h:head>
+	<title>Esta es la integracion</title>
+
+	<!-- 	<link rel="stylesheet" type="text/css" href="resource/normalize.css" /> -->
+	<link rel="stylesheet" type="text/css" href="resource/admision.css" />
+</h:head>
+<h:body>
+	<div id="header">
+		<h1>Sistema NNA</h1>
+	</div>
+	<div id="admision">
+		<h2>ADMISION</h2>
+		<div id="inscripcion">
+			<h:panelGroup id="pnlInscripcion">
+				<fieldset>
+					<legend>Ingreso</legend>
+					<h:panelGrid columns="2"
+						columnClasses="thirty-five-percent top-alignment, sixty-five-percent top-alignment"
+						width="100%">
+						<h:outputLabel for="iptNumTramite" value="Hoja de Tramite N°:" />
+						<h:inputText id="iptNumTramite" value="" />
+
+
+						<h:outputLabel value="Fecha y Hora Tram:" />
+						<h:panelGroup>
+							<h:panelGrid columns="2" width="70%">
+								<h:inputText id="iptFechaTram" value="" />
+								<h:inputText id="iptHoraTram" value="" />
+							</h:panelGrid>
+
+						</h:panelGroup>
+
+						<h:outputLabel for="iptFechaHoraReg" value="Fecha y Hora Reg:" />
+						<h:inputText id="iptFechaHoraReg" value="" style="width:98%;"
+							disabled="true" />
+
+						<h:outputLabel for="iptResponsable" value="Responsable:" />
+						<h:inputText id="iptResponsable" value="" style="width:98%;"
+							disabled="true" />
+
+						<h:outputLabel for="ltoModalidad" value="Modalidad Ingreso:" />
+						<h:selectOneMenu id="ltoModalidad"
+							style="width:99%;padding-left:10px;">
+							<f:selectItem itemLabel="[SELECCIONAR]" itemValue="**" />
+							<f:selectItem itemLabel="Call Center" itemValue="1" />
+							<f:selectItem itemLabel="Admision" itemValue="2" />
+							<f:selectItem itemLabel="Judicial" itemValue="3" />
+							<f:selectItem itemLabel="Itinerante" itemValue="4" />
+						</h:selectOneMenu>
+
+
+
+					</h:panelGrid>
+				</fieldset>
+			</h:panelGroup>
+
+		</div>
+		<div id="procedencia">
+			PROCEDENCIA
+			<h:panelGroup>
+				<h:panelGrid columns="4"
+					columnClasses="fifteen-percent 	top-alignment,
+								   twenty-percent 	top-alignment,
+								   fifteen-percent 		top-alignment, 
+								   fifty-percent	top-alignment"
+								   width="100%">
+								   
+								   
+					<h:outputLabel for="ltoTipoDocument" value="Tipo de Doc.:" />
+					<h:selectOneMenu id="ltoTipoDocument"
+						style="width:99%;padding-left:10px;">
+						<f:selectItem itemLabel="[SELECCIONAR]" itemValue="**" />
+						<f:selectItem itemLabel="Tipo Documento 1" itemValue="1" />
+						<f:selectItem itemLabel="Tipo Documento 2" itemValue="2" />
+						<f:selectItem itemLabel="Tipo Documento 3" itemValue="3" />
+						<f:selectItem itemLabel="Tipo Documento 4" itemValue="4" />
+					</h:selectOneMenu>
+					<h:outputLabel for="iptNumDocument" value="Num. Doc.:" />
+					<h:inputText id="iptNumDocument" value="" style="width:70%;"
+						disabled="false" />
+
+
+
+					<h:outputLabel for="ltoTipoInstancia" value="Tipo Instancia:" />
+					<h:selectOneMenu id="ltoTipoInstancia"
+						style="width:99%;padding-left:10px;">
+						<f:selectItem itemLabel="[SELECCIONAR]" itemValue="**" />
+						<f:selectItem itemLabel="Instancia 1" itemValue="1" />
+						<f:selectItem itemLabel="Instancia 2" itemValue="2" />
+						<f:selectItem itemLabel="Instancia 3" itemValue="3" />
+						<f:selectItem itemLabel="Instancia 4" itemValue="4" />
+					</h:selectOneMenu>
+					<h:outputLabel for="iptInstitucion" value="Institucíon:" />
+					<h:inputText id="iptInstitucion" value="" style="width:70%;"
+						disabled="false" />
+						
+						
+					<h:outputLabel   value="Ubigeo:" />
+					<h:selectOneMenu id="ltoDepartamento"
+						style="width:99%;padding-left:10px;">
+						<f:selectItem itemLabel="[SELECCIONAR]" itemValue="**" />
+						<f:selectItem itemLabel="Instancia 1" itemValue="1" />
+						<f:selectItem itemLabel="Instancia 2" itemValue="2" />
+						<f:selectItem itemLabel="Instancia 3" itemValue="3" />
+						<f:selectItem itemLabel="Instancia 4" itemValue="4" />
+					</h:selectOneMenu>
+					
+					<h:selectOneMenu id="ltoProvincia"
+						style="width:99%;">
+						<f:selectItem itemLabel="[SELECCIONAR]" itemValue="**" />
+						<f:selectItem itemLabel="Instancia 1" itemValue="1" />
+						<f:selectItem itemLabel="Instancia 2" itemValue="2" />
+						<f:selectItem itemLabel="Instancia 3" itemValue="3" />
+						<f:selectItem itemLabel="Instancia 4" itemValue="4" />
+					</h:selectOneMenu>	
+					<h:selectOneMenu id="ltoDistrito"
+						style="width:71%;">
+						<f:selectItem itemLabel="[SELECCIONAR]" itemValue="**" />
+						<f:selectItem itemLabel="Instancia 1" itemValue="1" />
+						<f:selectItem itemLabel="Instancia 2" itemValue="2" />
+						<f:selectItem itemLabel="Instancia 3" itemValue="3" />
+						<f:selectItem itemLabel="Instancia 4" itemValue="4" />
+					</h:selectOneMenu>
+					
+					
+					
+					
+						
+						
+				</h:panelGrid>
+
+			</h:panelGroup>
+
+
+
+
+		</div>
+
+	</div>
+
+</h:body>
+</html>

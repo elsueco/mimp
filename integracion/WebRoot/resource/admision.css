@@ -1,0 +1,88 @@
+.h2 {
+	border: 0px;
+}
+
+#header {
+	height: 45px;
+	border-bottom: 1px solid #EEE;
+	background-color: #ffffff;
+	height: 50px;
+	width: 100%;
+	padding: 0px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	text-align: center;
+}
+
+#admision {
+	border: 0px;
+	min-width: 1000px; padding : 0px;
+	background: #CCCCCC;
+	display: block;
+	height: 450px;
+	padding: 0px;
+}
+
+#procedencia, #inscripcion {
+	height: 250px;
+}
+
+#inscripcion {
+	width: 40%;
+	float: left;
+	background: gray;
+}
+
+#procedencia {
+	width: 60%;
+	float: right;
+	background: #59c88b;
+}
+
+.ten-percent {
+	width: 10%;
+	background: #ff80ab;
+}
+
+.fifteen-percent {
+	width: 15%;
+	background: #ff80c0;
+}
+
+.twenty-percent {
+	width: 20%;
+	background: #808080;
+}
+
+.twenty-five-percent {
+	width: 25%;
+}
+
+.thirty-percent {
+	width: 30%;
+	background: #8080ff;
+}
+
+.thirty-five-percent {
+	width: 35%;
+}
+
+.forty-percent {
+	width: 40%;
+}
+.fifty-percent {
+	width: 40%;
+}
+
+
+.sixty-percent {
+	width: 60%;
+}
+
+.sixty-five-percent {
+	width: 60%;
+}
+
+.top-alignment {
+	vertical-align: top;
+}
